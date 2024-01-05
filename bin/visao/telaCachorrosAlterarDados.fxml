@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="707.0" style="-fx-background-color: #01a6b2;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visao.FXMLEdicaoCachController">
+   <children>
+      <Label alignment="CENTER" layoutX="267.0" layoutY="21.0" prefHeight="38.0" prefWidth="174.0" text="CACHORRO" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="189.0" layoutY="81.0" prefHeight="366.0" prefWidth="332.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label layoutX="28.0" layoutY="53.0" prefHeight="18.0" prefWidth="39.0" text="NOME" textFill="#01a6b2">
+               <font>
+                  <Font name="Arial Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="85.0" prefHeight="17.0" prefWidth="39.0" text="IDADE" textFill="#01a6b2">
+               <font>
+                  <Font name="Arial Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="117.0" prefHeight="17.0" prefWidth="70.0" text="COR" textFill="#01a6b2">
+               <font>
+                  <Font name="Arial Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="149.0" prefHeight="17.0" prefWidth="70.0" text="PESO" textFill="#01a6b2">
+               <font>
+                  <Font name="Arial Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="180.0" prefHeight="18.0" prefWidth="78.0" text="RAÇA" textFill="#01a6b2">
+               <font>
+                  <Font name="Arial Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="252.0" prefHeight="17.0" prefWidth="113.0" text="HISTÓRICO SAÚDE" textFill="#01a6b2">
+               <font>
+                  <Font name="Arial Bold" size="11.0" />
+               </font>
+            </Label>
+            <TextField fx:id="campoNome" layoutX="110.0" layoutY="49.0" prefHeight="25.0" prefWidth="193.0">
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color opacity="0.38167938590049744" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </TextField>
+            <TextField fx:id="campoIdade" layoutX="110.0" layoutY="81.0" prefHeight="25.0" prefWidth="193.0">
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color opacity="0.3799999952316284" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </TextField>
+            <TextField fx:id="campoCor" layoutX="110.0" layoutY="113.0" prefHeight="25.0" prefWidth="193.0">
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color opacity="0.3799999952316284" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </TextField>
+            <TextField fx:id="campoPeso" layoutX="110.0" layoutY="145.0" prefHeight="25.0" prefWidth="193.0">
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color opacity="0.3799999952316284" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </TextField>
+            <TextField fx:id="campoRaca" layoutX="110.0" layoutY="177.0" prefHeight="25.0" prefWidth="193.0">
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color opacity="0.3799999952316284" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </TextField>
+            <Button fx:id="btnSalvar" layoutX="207.0" layoutY="310.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="78.0" text="SALVAR" textFill="#01a6b2">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCan" layoutX="44.0" layoutY="310.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="78.0" text="CANCELAR" textFill="#01a6b2">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="28.0" layoutY="214.0" prefHeight="18.0" prefWidth="78.0" text="PORTE" textFill="#01a6b2">
+               <font>
+                  <Font name="Arial Bold" size="11.0" />
+               </font>
+            </Label>
+            <TextField fx:id="campoPorte" layoutX="110.0" layoutY="210.0" prefHeight="25.0" prefWidth="193.0">
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color opacity="0.3799999952316284" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </TextField>
+            <TextField fx:id="campoHist" layoutX="138.0" layoutY="242.0" prefHeight="55.0" prefWidth="166.0">
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color opacity="0.3799999952316284" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="268.0" layoutY="48.0" prefHeight="38.0" prefWidth="174.0" text="ALTERAR DADOS" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

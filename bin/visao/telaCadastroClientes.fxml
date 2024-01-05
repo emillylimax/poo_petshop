@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPaneGeral" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="707.0" style="-fx-background-color: #01a6b2;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visao.FXMLCadastroController">
+   <children>
+      <Label alignment="CENTER" layoutX="267.0" layoutY="21.0" prefHeight="38.0" prefWidth="174.0" text="CRIAR CONTA" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="anchorPaneCampos" layoutX="189.0" layoutY="81.0" prefHeight="366.0" prefWidth="332.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label layoutX="28.0" layoutY="53.0" prefHeight="17.0" prefWidth="26.0" text="CPF" textFill="#01a6b2">
+               <font>
+                  <Font name="Arial" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="96.0" prefHeight="17.0" prefWidth="39.0" text="NOME" textFill="#01a6b2">
+               <font>
+                  <Font name="Arial Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="134.0" prefHeight="17.0" prefWidth="70.0" text="ENDEREÇO" textFill="#01a6b2">
+               <font>
+                  <Font name="Arial Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="175.0" prefHeight="17.0" prefWidth="70.0" text="TELEFONE" textFill="#01a6b2">
+               <font>
+                  <Font name="Arial Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="214.0" prefHeight="17.0" prefWidth="39.0" text="EMAIL" textFill="#01a6b2">
+               <font>
+                  <Font name="Arial Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="259.0" prefHeight="17.0" prefWidth="113.0" text="DEFINA UMA SENHA" textFill="#01a6b2">
+               <font>
+                  <Font name="Arial Bold" size="11.0" />
+               </font>
+            </Label>
+            <TextField fx:id="campoCpfCadastro" layoutX="110.0" layoutY="49.0" prefHeight="25.0" prefWidth="193.0">
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color opacity="0.38167938590049744" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </TextField>
+            <TextField fx:id="campoNomeCadastro" layoutX="110.0" layoutY="92.0" prefHeight="25.0" prefWidth="193.0">
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color opacity="0.3799999952316284" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </TextField>
+            <TextField fx:id="campoEndCadastro" layoutX="110.0" layoutY="130.0" prefHeight="25.0" prefWidth="193.0">
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color opacity="0.3799999952316284" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </TextField>
+            <TextField fx:id="campoTelCadastro" layoutX="110.0" layoutY="171.0" prefHeight="25.0" prefWidth="193.0">
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color opacity="0.3799999952316284" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </TextField>
+            <TextField fx:id="campoEmailCadastro" layoutX="110.0" layoutY="210.0" prefHeight="25.0" prefWidth="193.0">
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color opacity="0.3799999952316284" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </TextField>
+            <PasswordField fx:id="campoSenhaCadastro" layoutX="145.0" layoutY="255.0" prefHeight="25.0" prefWidth="158.0">
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color opacity="0.3799999952316284" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </PasswordField>
+            <Button fx:id="btnSalvarCadastro" layoutX="189.0" layoutY="310.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="70.0" text="SALVAR" textFill="#01a6b2">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCancCadastro" layoutX="84.0" layoutY="310.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="78.0" text="CANCELAR" textFill="#01a6b2">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

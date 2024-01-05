@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPaneGeral" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="707.0" style="-fx-background-color: #01a6b2;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visao.FXMLAnimaisController">
+   <children>
+      <Label alignment="CENTER" layoutX="254.0" layoutY="23.0" prefHeight="38.0" prefWidth="199.0" text="MEUS ANIMAIS" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="anchorPaneCampos" layoutX="22.0" layoutY="63.0" prefHeight="410.0" prefWidth="658.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Button fx:id="btnVoltar" layoutX="51.0" layoutY="350.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="174.0" text="VOLTAR" textFill="#01a6b2">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAlterar" layoutX="51.0" layoutY="232.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="174.0" text="ALTERAR" textFill="#01a6b2">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnExcluir" layoutX="52.0" layoutY="295.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="174.0" text="EXCLUIR" textFill="#01a6b2">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCadastroGatos" layoutX="51.0" layoutY="42.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="174.0" text="GATO" textFill="#01a6b2">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCadastroCach" layoutX="51.0" layoutY="88.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="174.0" text="CACHORRO" textFill="#01a6b2">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="91.0" layoutY="13.0" text="CADASTRAR" textFill="#01a6b2">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color opacity="0.1564885526895523" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Label>
+            <TableView fx:id="tvGato" layoutX="270.0" layoutY="38.0" prefHeight="156.0" prefWidth="361.0">
+              <columns>
+                <TableColumn fx:id="colunaId" prefWidth="25.0" text="ID" />
+                <TableColumn fx:id="colunaNome" prefWidth="71.0" text="Nome" />
+                  <TableColumn fx:id="colunaIdade" prefWidth="42.0" text="Idade" />
+                  <TableColumn fx:id="colunaCor" prefWidth="46.0" text="Cor" />
+                  <TableColumn fx:id="colunaPeso" prefWidth="37.0" text="Peso" />
+                  <TableColumn fx:id="colunaPelo" prefWidth="51.0" text="Pelo" />
+                  <TableColumn fx:id="colunaHist" prefWidth="88.0" text="Histórico" />
+              </columns>
+            </TableView>
+            <Label layoutX="409.0" layoutY="21.0" textFill="#01a6b2">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color opacity="0.1564885526895523" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Label>
+            <Label layoutX="363.0" layoutY="13.0" text="GATOS CADASTRADOS" textFill="#01a6b2">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color opacity="0.1564885526895523" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Label>
+            <Label layoutX="341.0" layoutY="209.0" text="CACHORROS CADASTRADOS" textFill="#01a6b2">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color opacity="0.1564885526895523" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Label>
+            <TableView fx:id="tvCach" layoutX="270.0" layoutY="232.0" prefHeight="156.0" prefWidth="361.0">
+               <columns>
+                  <TableColumn fx:id="colunaId2" prefWidth="24.0" text="ID" />
+                  <TableColumn fx:id="colunaNome2" prefWidth="57.0" text="Nome" />
+                  <TableColumn fx:id="colunaIdade2" prefWidth="36.0" text="Idade" />
+                  <TableColumn fx:id="colunaCor2" prefWidth="50.0" text="Cor" />
+                  <TableColumn fx:id="colunaPeso2" prefWidth="31.0" text="Peso" />
+                  <TableColumn fx:id="colunaRaca" prefWidth="46.0" text="Raça" />
+                  <TableColumn fx:id="colunaPorte" prefWidth="46.0" text="Porte" />
+                  <TableColumn fx:id="colunaHist2" prefWidth="70.0" text="Histórico" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
